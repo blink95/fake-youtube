@@ -1,0 +1,33 @@
+body{
+  background-color:#FFFA;
+  padding:0;
+  margin:0;
+  font-family: Arial;
+}
+header{
+  padding-bottom:15;
+}
+
+.grid-1{
+  padding-top: 15;
+  background-color:#FFFA;
+  display: grid;
+  grid-template-columns: 40 120 auto auto;
+  grid-auto-rows: auto
+}
+.youtube-logo{
+  padding-left:10;
+  padding-top:6;
+}
+.search-container{
+  padding-left:70;
+}
+
+
+.user-nav{
+  justify-content: flex-end;
+  background-color: #FFFA;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25% 25%;
+  grid-auto-rows: auto;
+}
