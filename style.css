@@ -6,28 +6,61 @@ body{
 }
 header{
   padding-bottom:15;
+  border: solid 2px rgba(181, 181, 181, 0.57);
+  border-radius: 5px;
+  border-bottom: groove 4px rgba(247, 247, 247, 0.57);
 }
-
 .grid-1{
-  padding-top: 15;
+  padding: 10px;
   background-color:#FFFA;
-  display: grid;
-  grid-template-columns: 40 120 auto auto;
-  grid-auto-rows: auto
+  display: flex;
 }
-.youtube-logo{
-  padding-left:10;
-  padding-top:6;
-}
-.search-container{
-  padding-left:70;
-}
+  .sideline-nav{
+    border-radius:5px;
+    background-color:#FFFA;
+    transition: background-color 0.5s ease-in-out;
+  }
+    .sideline-nav:hover{
+      border-radius:5px;
+      background-color:rgba(181, 181, 181, 0.57);
+      /*transition: all 0.9s ease;*/
+    }
 
-
-.user-nav{
-  justify-content: flex-end;
-  background-color: #FFFA;
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25% 25%;
-  grid-auto-rows: auto;
-}
+  .youtube-logo{
+    /*position: absolute;*/
+    padding: 6px;
+    margin-left: 10px;
+    background-color:#FFFA;
+  }
+  .search-container{
+    position: absolute;
+    left: 250px;
+    /*margin-left:150px;*/
+  }
+    .search-container .search-text-input{
+      overflow:hidden;
+      background-color:rgba(247, 247, 247, 0.57);
+      border-color: rgba(181, 181, 181, 0.57);
+      border-radius:5px;
+      border-width: 5px;
+    }
+  .user-nav{
+    position: absolute;
+    right:50px;
+    /*background-color: #FFFA;*/
+    background-color: #FFFA;
+    display: flex;
+    /*grid-template-columns: 25% 25% 25% 25% 25%;
+    grid-auto-rows: auto;*/
+  }
+    .user-nav .notifications,.messages,.youtube-apps, .create-post{
+      margin-right: 25px;
+      background-color:#FFFA;
+    }
+    /*.user-nav .messages{
+      margin-right: 25px;
+      background-color: blue;
+    }
+    .user-nav .youtube-apps{
+      margin-right: 25px;
+    }*/
