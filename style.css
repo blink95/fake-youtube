@@ -82,7 +82,23 @@ header{
         .search-container .search-text-input:focus + .forVideos{
           color: rgba(255, 43, 43, 0);
         }
-
+      .search-container .searchYoutube{
+        display: block;
+        position: fixed;
+        top: 32px;
+        left:412px;
+        font-family: Arial;
+        color:rgba(255, 43, 43, 0);
+        font-size: 18;
+        font-weight: 550;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: color 0.5s ease-in-out;
+      }
+        .search-container .search-text-input:focus ~ .searchYoutube{
+          color: white;
+        }
       .search-container .search-text-input{
         overflow:hidden;
         background-color:rgba(247, 247, 247, 0.57);
