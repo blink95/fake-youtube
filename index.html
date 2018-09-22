@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
-  <script src = './script.js'></script>
   <title>Fake Youtube</title>
 </head>
 <body>
   <header class="grid-1">
     <div class="sideline-nav">
-      <img src="images/navigation-icon.png" alt="|-|-|-|" class="sidelinenav-pic"
+      <img src="images/navigation-icon.png" alt="|-|-|-|" cflass="sidelinenav-pic"
       width=35>
     </div>
     <div class="youtube-logo">
@@ -19,9 +18,9 @@
       width="80">
     </div>
     <div class="search-container">
-      <input type="text" placeholder="Search" class="search-text-input" size="90">
+      <input id= "test" type="text" placeholder="Search" class="search-text-input" size="90">
       <text class="forVideos">for your favorite videos and content creators.</text>
-      <text class="searchYoutube">Youtube.</text>
+      <text id = "searchYT" class="searchYoutube">Youtube.</text>
       <button class="search-button">
         <img src="images/search-icon.png" alt="MAG" class="magnifying-glass"
         width="16">
@@ -49,5 +48,7 @@
       </div>
     </nav>
   </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src = "./script.js"></script>
 </body>
 </html>
