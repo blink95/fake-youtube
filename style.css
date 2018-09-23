@@ -17,7 +17,7 @@ input {
     font-size: 16;
     font-weight: 550;
     color: grey;
-    transition: .5s;
+    transition: .4s ease-in-out;
   }
 
 header{
@@ -42,7 +42,7 @@ header{
     .sideline-nav{
       border-radius:5px;
       background-color:#FFFA;
-      transition: background-color 0.5s ease-in-out;
+      transition: background-color 0.4s ease-in-out;
     }
       .sideline-nav:hover{
         border-radius:5px;
@@ -61,45 +61,45 @@ header{
       display: flex;
       left: 250px;
     }
-      .search-container .forVideos{
+      #forVideos{
         display: block;
         position: fixed;
         top: 32px;
         left:463px;
         font-family: Arial;
-        color:#FFFA;
+        color:rgba(0,0,0,0);
         font-size: 18;
         font-weight: 550;
-        text-overflow: ellipsis;
+        /*text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
-        transition: color 0.5s ease-in-out;
+        white-space: nowrap;*/
+        transition: color 0.4s ease-in-out;
       }
-        .search-container:hover > .forVideos{
+        /*.search-container:hover > .forVideos{
 
           color: white;
-        }
-        .search-container .search-text-input:focus + .forVideos{
+        }*/
+        /*.search-container .search-text-input:focus + .forVideos{
           color: rgba(255, 43, 43, 0);
-        }
-      .search-container .searchYoutube{
+        }*/
+      #searchYT{
         display: block;
         position: fixed;
         top: 32px;
         left:412px;
         font-family: Arial;
-        color:rgba(255, 43, 43, 0);
+        color:rgba(0, 0, 0, 0);
         font-size: 18;
         font-weight: 550;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        transition: color 0.5s ease-in-out;
+        transition: color 0.4s ease-in-out;
       }
-        .search-container .search-text-input:focus ~ .searchYoutube{
+        /*.search-container .search-text-input:focus ~ .searchYoutube{
           color: white;
-        }
-      .search-container .search-text-input{
+        }*/
+      #nav-input{
         overflow:hidden;
         background-color:rgba(247, 247, 247, 0.57);
         height: 35px;
@@ -107,21 +107,21 @@ header{
         border-color: rgba(181, 181, 181, 0.57);
         border-radius:5px;
         border-width: 2.5px;
-        transition: background-color 0.5s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
       }
-        .search-container .search-text-input:hover{
+        /*#nav-input:hover{
           background-color: rgba(255, 43, 43, .72);
-        }
-        .search-container .search-text-input:hover::-webkit-input-placeholder{
+        }*/
+        #nav-input:hover::-webkit-input-placeholder{
           font-size:18;
           padding-left:150px;
           color:white;
         }
-        .search-container .search-text-input:focus::-webkit-input-placeholder{
+        #nav-input:focus::-webkit-input-placeholder{
           padding-left:100px;
         }
         :focus::-webkit-input-placeholder {
-          color: #FFFA;
+          color: rgba(0,0,0,0);
         }
       .search-container .search-button{
         margin-left:5px;
@@ -154,7 +154,7 @@ header{
         border-color: rgba(255, 43, 43, .60);
         border-style: double;
         border-width: 3px;
-        transition: background-color 0.5s ease-in-out;
+        transition: background-color 0.4s ease-in-out;
       }
         .user-nav .create-post img{
           padding-top: 5px;
