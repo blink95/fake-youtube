@@ -30,14 +30,14 @@ $(document).ready(function() {
       }
       else{
         $("#searchYT").css("color","white");
-        $("#placeholder-search").css("padding-left","100px");
+        $("#placeholder-search").css("padding-left","102px");
         $("#placeholder-search").css("color","white");
       }
     });
 
     $("#nav-input").hover(function(){
       hover = 1;
-      $(this).css("background-color","rgba(255, 43, 43, .72)");
+      $(this).css("background-color","rgba(255, 43, 43, .50)");
       if (input){
         $(this).css("color","white");
         $("#searchYT").css("color","rgba(0,0,0,0)");
@@ -48,14 +48,12 @@ $(document).ready(function() {
         switch(focus){
           case 0:
             $("#placeholder-search").css("color","white");
-            $("#placeholder-search").css("padding-left","150px");
-            $("#placeholder-search").css("font-size","18");
+            $("#placeholder-search").css("padding-left","152px");
             $("#forVideos").css("color","white");
             break;
           case 1:
             $("#placeholder-search").css("color","white");
-            $("#placeholder-search").css("padding-left","100px");
-            $("#placeholder-search").css("font-size","18");
+            $("#placeholder-search").css("padding-left","102px");
             $("#searchYT").css("color","white");
             break;
         }
@@ -79,7 +77,7 @@ $(document).ready(function() {
     $("#nav-input").focusin(function(){
       focus =1;
       if (!input){
-        $("#placeholder-search").css("padding-left","100px");
+        $("#placeholder-search").css("padding-left","102px");
         $("#searchYT").css("color","white");
         $("#forVideos").css("color","rgba(0,0,0,0)");
       }

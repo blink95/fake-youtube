@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel = 'stylesheet' type = 'text/css' href = './style.css'>
+  <link rel = 'stylesheet' type = 'text/css' href = './css/style.css'>
   <title>Fake Youtube</title>
 </head>
 <body>
@@ -51,10 +51,33 @@
   </header>
   <nav class="page-nav">
     <div class="home-options">
-
+      <div class="home">
+        <img src="images/home-icon.png" alt="HOME" class "home-icon">
+        <text>Home</text>
+      </div>
+      <div class="trending">
+        <img src="images/trending-icon.png" alt="TRENDING" class "trending-icon">
+        <text>Trending</text>
+      </div>
+      <div class="subscriptions">
+        <img src="images/sub-icon.png" alt="SUBS" class "sub-icon">
+        <text>Subscriptions</text>
+      </div>
     </div>
     <div class="library-options">
-
+      <text style="display:inline-block;padding-left:30px;padding-top:10px;color:rgba(255, 43, 43, .40)">LIBRARY</text>
+      <div class="history">
+        <img src="images/history-icon.png" alt="HISTORY" class "history-icon">
+        <text>History</text>
+      </div>
+      <div class="watch-later">
+        <img src="images/watch-icon.png" alt="WATCH" class "watch-icon">
+        <text>Watch later</text>
+      </div>
+      <div class="liked-videos">
+        <img src="images/liked-icon.png" alt="LIKED" class "liked-icon">
+        <text>Liked videos</text>
+      </div>
     </div>
     <div class="subscription-options">
 
@@ -62,5 +85,6 @@
   </nav>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src = "./script.js"></script>
+  <script src = "./sidebar-nav.js"></script>
 </body>
 </html>
