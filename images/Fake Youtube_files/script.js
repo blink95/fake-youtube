@@ -93,7 +93,6 @@ $(document).ready(function() {
         $("#placeholder-search").css("color","rgba(0,0,0,0)");
       }
       else{
-        $("#searchYT").css("color","rgba(0,0,0,0)");
         $("#placeholder-search").css("color","grey");
         $("#placeholder-search").css("padding-left","0px");
         hover,focus = 0;
