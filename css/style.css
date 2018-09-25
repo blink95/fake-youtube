@@ -103,7 +103,7 @@ header{
         width: 55px;
       }
     .user-nav{
-      position: fixed;
+      position: absolute;
       left: 1100px;
       background-color: #FFFA;
       display: flex;
@@ -178,4 +178,41 @@ body{
     transition: background-color .5s ease-in-out;
     /*border: solid 1px red;*/
     /*background-color: lightgreen;*/
+  }
+  .video-nav{
+    display: grid;
+    padding-top:50px;
+    padding-left: 100px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50%;
+    position: absolute;
+    left: 220px;
+    /*right:220px;*/
+    height: 100vh;
+    width: 1105px;
+    background-color: #FFFA;
+  }
+  .video-nav .toggle-new, .toggle-watched,.toggle-trending,.toggle-recommended{
+    display: block;
+    height: 300px;
+    width:450px;
+    background-color:rgba(181, 181, 181, 0.09);
+
+  }
+  .video-nav .toggle-new{
+    /*position: absolute;
+    top:50px;
+    left: 100px;*/
+
+  }
+  .video-nav .toggle-watched{
+    /*position: absolute;
+    top:50px;
+    left: 600px;*/
+    /*right: 100px;*/
+  }
+  .video-nav .toggle-recommended{
+  }
+  .video-nav .toggle-trending{
+
   }
