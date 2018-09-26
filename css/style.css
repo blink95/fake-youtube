@@ -64,9 +64,9 @@ header{
       }
         #forVideos{
           display: block;
-          position: fixed;
-          top: 32px;
-          left:463px;
+          position: absolute;
+          top: 12px;
+          left:213px;
           font-size:16px;
           color:rgba(0,0,0,0);
           /*font-weight: 550;*/
@@ -74,9 +74,9 @@ header{
         }
         #searchYT{
           display: block;
-          position: fixed;
-          top: 32px;
-          left:412px;
+          position: absolute;
+          top: 12px;
+          left:162px;
           font-size: 16px;
           color:rgba(0, 0, 0, 0);
           /*font-weight: 550;*/
@@ -147,6 +147,7 @@ body{
   padding:0;
   margin:0;
   font-family: Arial;
+  position: relative;
 }
   ul{
     list-style-type:none;
@@ -175,7 +176,7 @@ body{
   .page-nav .home-options div,.library-options div{
     padding: 10px;
     padding-left: 50px;
-    transition: background-color .5s ease-in-out;
+    transition: background-color .4s ease-in-out;
     /*border: solid 1px red;*/
     /*background-color: lightgreen;*/
   }
@@ -185,8 +186,8 @@ body{
     padding-left: 100px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50%;
-    position: absolute;
-    left: 220px;
+    position: relative;
+    left: 0px;
     /*right:220px;*/
     height: 100vh;
     width: 1105px;
@@ -194,25 +195,87 @@ body{
   }
   .video-nav .toggle-new, .toggle-watched,.toggle-trending,.toggle-recommended{
     display: block;
+    position:relative;
+    overflow:hidden;
     height: 300px;
     width:450px;
-    background-color:rgba(181, 181, 181, 0.09);
-
+    background-color:rgba(181, 181, 181, 0.06);
+    border-radius: 100px;
   }
-  .video-nav .toggle-new{
-    /*position: absolute;
+  .frame1,.frame2,.frame3,.frame4{
+    transition: all .3s ease-in;
+  }
+  .frame1{
+    position: absolute;
     top:50px;
-    left: 100px;*/
-
+    left: 145px;
+    height: 100px;
+    width: 150px;
+    z-index: 3;
+    background-color: grey;
   }
-  .video-nav .toggle-watched{
-    /*position: absolute;
-    top:50px;
-    left: 600px;*/
-    /*right: 100px;*/
+  .frame2{
+    position: absolute;
+    top: 70px;
+    left: 75px;
+    height: 90px;
+    width: 135px;
+    z-index: 2;
+    background-color: lightgrey;
   }
-  .video-nav .toggle-recommended{
+  .frame3{
+    position: absolute;
+    top:70px;
+    left: 230px;
+    height: 90px;
+    width: 135px;
+    z-index:1;
+    background-color: lightgrey;
   }
-  .video-nav .toggle-trending{
-
+  .video-selects .creator,.title,.views,.synopsis{
+    height:0;
+    font-size: 12px;
+    position: absolute;
+    transition: transform 3s ease-out;
   }
+  .video-selects .creator{
+    top:30px;
+    padding-left: 180px;
+  }
+  .video-selects .title{
+    top:170px;
+    padding-left: 116px;
+  }
+  .video-selects .views{
+    top:185px;
+    padding-left: 183px;
+  }
+  .video-selects .synopsis{
+    margin-right: 95px;
+    top:210px;
+    padding-left: 137px;
+  }
+  .left-button img,.right-button img{
+    padding-left: 4px;
+    padding-right:4px;
+    border-radius: 90px;
+    background-color: rgba(181, 181, 181, 0.06);
+    transition: background-color 0.4s ease-in-out;
+    width:40%;
+  }
+    .left-button{
+      display: block;
+      position: relative;
+      top: 37%;
+      height: 30px;
+      width:30px;
+      /*background-color: blue;*/
+    }
+    .right-button{
+      position: relative;
+      top: 27%;
+      left: 427px;
+      height: 30px;
+      width: 30px;
+      /*background-color: red;*/
+    }
