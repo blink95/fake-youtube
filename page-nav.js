@@ -6,9 +6,15 @@ $(document).ready(function(){
   });
   var v =".video";
   var newvcount=1;
+
+  function show_video_info(v){
+    $(v).find("creator").css("color","rgba(0,0,0,0)");
+  }
   $(".right-button img").click(function(){
 
     $(this).parents().queue(function(next){
+      $(this).siblings(".video-selects").find(v+newvcount+" text").css("color","rgba(0,0,0,0)");
+      $(this).siblings(".video-selects").find(v+newvcount+" img").css("opacity","0");
       $(this).siblings(".frame1").css("z-index","6");
       $(this).siblings(".frame1").css("background-color","lightgrey");
       $(this).siblings(".frame2").css("background-color","grey");
@@ -33,14 +39,22 @@ $(document).ready(function(){
       $(this).siblings(".frame3").attr('class', 'frame2');
 
       $(this).siblings(".tempframe").attr('class', 'frame3');
+      newvcount--;
+      if (newvcount==0){
+        newvcount = 4;
+      }
+      $(this).siblings(".video-selects").find(v+newvcount+" text").css("color","rgba(255, 43, 43, .50)");
+      $(this).siblings(".video-selects").find(v+newvcount+" img").css("opacity","1");
       next();
     });
 
   });
 
   $(".left-button img").click(function(){
+    //$(this).parents().siblings(".video-selects").find(v+newvcount).css("opacity","0");
     $(this).parents().queue(function(next){
-      $(this).siblings(".video-selects").find(v+newvcount).hide();
+      $(this).siblings(".video-selects").find(v+newvcount+" text").css("color","rgba(0,0,0,0)");
+      $(this).siblings(".video-selects").find(v+newvcount+" img").css("opacity","0");
       $(this).siblings(".frame3").css("background-color","grey");
       $(this).siblings(".frame1").css("background-color","lightgrey");
       $(this).siblings(".frame2").css("background-color","lightgrey");
@@ -68,7 +82,8 @@ $(document).ready(function(){
       if (newvcount==5){
         newvcount = 1;
       }
-      $(this).siblings(".video-selects").find(v+newvcount).show();
+      $(this).siblings(".video-selects").find(v+newvcount+" text").css("color","rgba(255, 43, 43, .50)");
+      $(this).siblings(".video-selects").find(v+newvcount+" img").css("opacity","1");
       next();
     });
 

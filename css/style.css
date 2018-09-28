@@ -232,15 +232,24 @@ body{
     z-index:1;
     background-color: lightgrey;
   }
+  .video-selects img{
+    position: absolute;
+    top: 58px;
+    left: 145px;
+    height: 28%;
+    z-index: 300;
+    transition: all .2s linear;
+  }
+
   .video-selects .creator,.title,.views,.synopsis{
-    height:0;
     font-size: 12px;
     position: absolute;
-    transition: transform 3s ease-out;
+    transition: all .3s linear;
   }
   .video-selects .creator{
     top:30px;
     padding-left: 180px;
+    /*transition: 10s all ease;*/
   }
   .video-selects .title{
     top:170px;
